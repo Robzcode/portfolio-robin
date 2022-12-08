@@ -1,5 +1,8 @@
 /* ===== Import de la police d'écriture : Inter Tight ===== */
 @import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&display=swap');
+/* ===== Import de la police d'écriture : Inter Tight ===== */
+
+
 
 /* ===== Paramétrage de tout le site ===== */
 *{
@@ -11,6 +14,9 @@
     scroll-behavior: smooth;
 }
 /* ===== Paramétrage de tout le site ===== */
+
+
+
 
 
 /* ===== Paramétrage du h1 à h6 et des button ===== */
@@ -26,12 +32,18 @@ button {
 /* ===== Paramétrage du h1 à h6 et des button ===== */
 
 
+
+
+
 /* ===== Paramétrage du body ===== */
 body {
     overflow-x: hidden;
     max-width: 1920px;
 }
 /* ===== Paramétrage du body ===== */
+
+
+
 
 
 /* ===== Début du Header ===== */
@@ -77,6 +89,16 @@ header .container ul a{
 
     header .container ul a{
         color: white;
+        font-size: 1em;
+    }
+    
+}
+
+@media (max-width: 400px) {
+    
+    header .container ul a{
+        color: white;
+        font-size: 0.5em;
     }
     
 }
@@ -100,6 +122,9 @@ header .container ul a{
 
 
 
+
+
+
 /* ===== Début de la SECTION 1 ===== */
 
 /* ===== Les écrans avec la taille max de 1500px ===== */
@@ -116,6 +141,7 @@ header .container ul a{
         display: none;
     }
 }
+
 
 /* ===== Paramétrage du conteneur ===== */
 .section-one .container{
@@ -189,6 +215,8 @@ header .container ul a{
 }
 /* ===== Fin du Paramétrage de l'animation ===== */
 /* ===== Fin du Paramétrage du bouton ===== */
+
+
 
 /* ===== Les écrans avec la taille max de 1500px ===== */
 @media (max-width: 1500px) {
@@ -334,6 +362,8 @@ header .container ul a{
     justify-content: space-around;
 }
 
+
+/* ===== Les écrans avec la taille minimum de 1500px ===== */
 @media (min-width: 1500px) {
     .content-top .left{
         max-width: 700px;
@@ -343,7 +373,7 @@ header .container ul a{
     }
 }
 
-
+/* ===== Les écrans avec la taille max de 1500px ===== */
 @media (max-width: 1500px) {
 
     .section-two .content{
@@ -402,7 +432,7 @@ header .container ul a{
 
 
 }
-
+/* ===== Les écrans avec la taille max de 600px ===== */
 @media (max-width: 600px){
     .section-two .title h1{
         font-size: 1em;
@@ -525,6 +555,258 @@ header .container ul a{
         font-size: 2.5em;
     }
 }
+
+/* ===== Table de la page RESSOURCES ===== */
+.container-table100 {
+    width: 100%;
+    min-height: 100vh;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 33px 30px;
+}
+
+.limiter{
+    width: 100%;
+    margin: auto 0;
+}
+
+.wrap-table100 {
+    width: 1170px;
+}
+
+table {
+    border-collapse: collapse;
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 0 auto;
+    position: relative;
+}
+
+/* ===== Table HEAD ===== */
+.table100-head {
+    height: 60px;
+    background:#000;
+}
+
+.table100-head th{
+    font-size: 18px;
+    color: white;
+    line-height: 1.2;
+}
+/* ===== Table HEAD ===== */
+
+table td, table th {
+    text-align: left;
+}
+
+table tbody tr {
+    height: 50px;
+    
+}
+
+tbody tr:nth-child(even){
+    background-color: #d0d0d0;
+}
+
+
+/* ===== Table de la page RESSOURCES ===== */
+
+
+
+/* ===== Colonnes de la Table de la page RESSOURCES ===== */
+.column1 {
+    width: 260px;
+    padding-left: 40px;
+}
+.column2 {
+    width: 200px;
+}
+.column3 {
+    width: 200px;
+}
+
+/* ===== Colonnes de la Table de la page RESSOURCES | RESPONSIVE ===== */
+@media (max-width: 950px) {
+    .column1 {
+        width: 160px;
+        padding-left: 40px;
+    }
+    .column2 {
+        width: 100px;
+    }
+    .column3 {
+        width: 100px;
+    }
+
+}
+
+@media (max-width: 700px) {
+    .column1 {
+        width: 150px;
+        padding-left: 40px;
+    }
+    .column2 {
+        width: 90px;
+    }
+    .column3 {
+        width: 90px;
+    }
+
+}
+/* ===== Colonnes de la Table de la page RESSOURCES | RESPONSIVE ===== */*
+
+/* ===== Colonnes de la Table de la page RESSOURCES ===== */
+
+.caroussel_diapo input{
+
+    position: absolute;
+    left: -999px;
+
+
+    
+    
+}
+
+.caroussel_diapo{
+
+    position: relative;
+    margin: 0 auto;
+    
+    
+}
+
+.contenu_carou {
+
+    width: 500px;
+    height: 332px;
+    perspective: 4000px;
+    
+    
+}
+
+.caroussel{
+    transform-style: preserve-3d;
+    position: relative;
+    width: 500px;
+    height: 332px;
+    transition: 1s;      
+}
+
+.caroussel img {
+	
+    position: absolute;
+    top: 0;
+    left: 0;
+    outline: 1px solid transparent;
+    backface-visibility: hidden;
+    transition: 1s;
+    margin-left: 10px;
+   
+}
+
+.caroussel img{
+
+    filter: blur(3px);
+    opacity: .8;
+}
+
+
+.caroussel img:nth-child(1){transform:translate3d(0,0,540px) scale(.8)}
+.caroussel img:nth-child(2){transform:rotateY(45deg) translateZ(540px) scale(.8)}
+
+.caroussel_diapo input[type=radio] + label {
+	
+    cursor:pointer;
+    background:#fff;
+    display:inline-block;
+    width:20px;
+    border-radius:50%;
+    height:20px;
+   
+   
+        
+}
+
+.caroussel_diapo input[type=radio]:checked + label{
+
+    background:#666868;
+}
+
+.caroussel_diapo label{
+
+    background:rgb(108, 109, 110);
+    
+}
+
+.caroussel_diapo input[name="rotation"]:checked ~ .contenu_carou .caroussel img:nth-child(n){
+	
+    filter: drop-shadow(12px 12px 7px hsla(0,0%,0%,.5));
+        
+}
+
+.caroussel_diapo #carou_un:checked ~ .contenu_carou .caroussel{transform:translateZ(-540px)}
+.caroussel_diapo #carou_deux:checked ~ .contenu_carou .caroussel{transform:translateZ(-540px) rotateY(-45deg)}
+
+
+
+/* ===== FOOTER ===== */
+
+footer{
+    height: 100px;
+    position: right;
+    display: flex;
+    align-items: center;
+    background-color: white;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+footer .container{
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+footer .container .reseaux{
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+footer .container .reseaux a{
+    color: #000;
+    padding: 0 10px;
+    transition: 0.6s;
+}
+
+footer .container .reseaux a i{
+    font-size: 1.2em;
+}
+
+footer .container .reseaux a:hover{
+    color: rgb(64, 64, 64);
+    padding: 0 10px;
+    transition: 0.6s;
+}
+
+footer .container h1{
+    color: rgb(58, 58, 58);
+    font-weight: 400;
+    font-size: 1em;
+}
+
+/* ===== FOOTER ===== */
 
 
 

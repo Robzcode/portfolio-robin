@@ -1,3 +1,7 @@
+ <!-- ===== Pour que l'ensemble du code soit optimisé j'ai utilisé des div afin de décomposer le tout ===== -->
+
+ <!-- ===== Chaque div est un conteneur. ===== -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -31,7 +35,9 @@
                 <ul>
                     <li><a href="">Accueil</a></li>
                     <li><a href="#cv">Curriculum</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#portfolio">Projets</a></li>
+                    <li><a href="./parcours.html">Parcours</a></li>
+                    <li><a href="./ressources.html">Sources</a></li>
                     <li><a href="mailto:robin.mundt@icloud.com">Contact</a></li>
                 </ul>
             </div>
@@ -107,7 +113,7 @@
                 <div class="right">
                     <div class="titre">
                         <div class="dot"></div>
-                        <h2>Développeur</h2>
+                        <h2>Apprenti Développeur Front-End</h2>
                     </div>
                     <div class="separateur"></div>
                     <p>
@@ -170,7 +176,7 @@
     <section class="section-three">
         <div class="container">
             <div class="left">
-                <h1 id="portfolio">Portfolio Personnel</h1>
+                <h1 id="portfolio">Projets</h1>
                 <div class="separateur"></div>
                 <p>
                     Le projet le plus récent est celui de ce Portfolio. J'y consacre certains moments afin
@@ -189,6 +195,47 @@
             </div>
         </div>
     </section>
+	 <!-- ===== Troisième SECTION ===== -->
+
+     <section class="section-three">
+        <div class="container">
+            <div class="left">
+                <div class='caroussel_diapo'>
+                    <input checked id="carou_un" name="rotation" type="radio">
+                    <label for="carou_un"></label>
+                    <input id="carou_deux" name="rotation" type="radio">
+                    <label for="carou_deux"></label>
+    
+    
+                    <div class="contenu_carou">
+                        <div class="caroussel">
+                        <img src="./img/saintsaut.png" alt>
+                        <img src="./img/cv.png" alt>
+                    
+    
+                        </div>
+                    </div>
+                </div>	
+            </div>
+            <div class="right">
+                
+            </div>
+        </div>
+    </section>
+	
+    <footer>
+        <div class="container">
+            <div class="reseaux">
+                <a href=""><i class="fa-brands fa-discord"></i></a>
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                <a href=""><i class="fa-brands fa-steam"></i></a>
+            </div>
+            <div class="copyright">
+                <h1>© 2022 Robin MUNDT - Tout droits réservés.</h1>
+            </div>
+            
+        </div>
+    </footer>
 
 </body>
 </html>
