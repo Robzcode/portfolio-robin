@@ -462,6 +462,16 @@ header .container ul a{
     justify-content: space-evenly;
 }
 
+.section-three2 {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    height: 100vh;
+}
+
 .section-three h1{
     color: white;
     font-size: 4em;
@@ -644,6 +654,8 @@ tbody tr:nth-child(even){
 
 }
 
+
+
 @media (max-width: 700px) {
     .column1 {
         width: 150px;
@@ -660,6 +672,7 @@ tbody tr:nth-child(even){
 /* ===== Colonnes de la Table de la page RESSOURCES | RESPONSIVE ===== */*
 
 /* ===== Colonnes de la Table de la page RESSOURCES ===== */
+
 
 .caroussel_diapo input{
 
@@ -705,6 +718,7 @@ tbody tr:nth-child(even){
     backface-visibility: hidden;
     transition: 1s;
     margin-left: 10px;
+    justify-content: space-between;
    
 }
 
@@ -721,7 +735,7 @@ tbody tr:nth-child(even){
 .caroussel_diapo input[type=radio] + label {
 	
     cursor:pointer;
-    background:#fff;
+    background:gray;
     display:inline-block;
     width:20px;
     border-radius:50%;
@@ -733,12 +747,12 @@ tbody tr:nth-child(even){
 
 .caroussel_diapo input[type=radio]:checked + label{
 
-    background:#666868;
+    background:#ffffff;
 }
 
 .caroussel_diapo label{
 
-    background:rgb(108, 109, 110);
+    background:rgb(255, 255, 255);
     
 }
 
@@ -752,6 +766,12 @@ tbody tr:nth-child(even){
 .caroussel_diapo #carou_deux:checked ~ .contenu_carou .caroussel{transform:translateZ(-540px) rotateY(-45deg)}
 
 
+@media (max-width: 1050px) {
+    .section-three2 {
+        display: none;
+    }
+
+}
 
 /* ===== FOOTER ===== */
 
