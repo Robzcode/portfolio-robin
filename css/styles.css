@@ -28,6 +28,7 @@ h5,
 h6,
 button {
     font-family: 'Inter Tight', sans-serif;
+    
 }
 /* ===== Paramétrage du h1 à h6 et des button ===== */
 
@@ -161,7 +162,18 @@ header .container ul a{
     margin-bottom: 70px;
 }
 
+
 /* ===== Début du Paramétrage du bouton ===== */
+.section-one a {
+    color: black;
+    transition: 0.6s;
+}
+
+.section-three a {
+    color: white;
+    transition: 0.6s;
+}
+
 .section-one button{
     position: relative;
     height: 70px;
@@ -174,6 +186,7 @@ header .container ul a{
     transition: 0.6s;
     overflow: hidden;
     cursor: pointer;
+   
 }
 
 /* ===== Début du Paramétrage de l'animation ===== */
@@ -187,13 +200,17 @@ header .container ul a{
     left: -2px;
     transform: translate(-100%);
     transition: 0.6s;
-    z-index: -1;
-    
+    z-index: -1;    
 
 }
 .section-one button:hover::before,
 .section-three button:hover::before {
     transform: translate(0%);
+}
+
+.section-one button a:hover {
+    color: white;
+    width: 280px;
 }
 
 .section-one button:hover {
@@ -447,7 +464,7 @@ header .container ul a{
     background-image: url(../svg/3.svg);
     background-repeat: no-repeat;
     background-size: cover;
-    position: right;
+    position: relative;
     display: flex;
     align-items: center;
     
@@ -777,7 +794,7 @@ tbody tr:nth-child(even){
 
 footer{
     height: 100px;
-    position: right;
+    position: relative;
     display: flex;
     align-items: center;
     background-color: white;
